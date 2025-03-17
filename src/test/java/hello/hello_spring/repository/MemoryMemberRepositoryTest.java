@@ -46,7 +46,7 @@ public class MemoryMemberRepositoryTest {
     }
 
     @Test
-    public void findAll(){
+    public void findAll(){ //맴버 전체 조회
         Member member1 = new Member();
         member1.setName("yeseul1");
         repository.save(member1);
