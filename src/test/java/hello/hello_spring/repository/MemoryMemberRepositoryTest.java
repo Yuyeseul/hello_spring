@@ -6,6 +6,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
+import java.util.Map;
 
 import static org.assertj.core.api.Assertions.*;
 
@@ -28,6 +29,7 @@ public class MemoryMemberRepositoryTest {
         Member result = repository.findById(member.getId()).get();
         assertThat(member).isEqualTo(result);
         //System.out.println("result = "+(result==member));
+
     }
 
     @Test

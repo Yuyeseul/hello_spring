@@ -4,6 +4,7 @@ import hello.hello_spring.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
+//스프링 빈 등록 방법 1) @Component 애노테이션 활용
 @Controller
 public class MemberController {
 
