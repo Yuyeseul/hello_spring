@@ -19,6 +19,8 @@ public class MemberController {
     @Autowired
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
+//        프록시인지 알수있음. aop를 사용하지 않으면 실체 객체를 빈으로 등록
+        System.out.println("memberservice = " +memberService.getClass());
     }
 
     @GetMapping(value = "/members/new")
